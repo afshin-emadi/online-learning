@@ -101,6 +101,7 @@
         $git remote add origin git@github.com...
     -use ls git bash command to see for existing ssh key pairs:
         $ls -al ~/.ssh
+       /// *** GIT Bash on vs code or terminal in vs code might not runs following commands as expected *** ///
     EITHER
     (USE EXISTING PRIVATE/PUBLIC SSH KEY PAIR)
     -add public ssh key to your GitHub account for establishing connection to GitHub 
