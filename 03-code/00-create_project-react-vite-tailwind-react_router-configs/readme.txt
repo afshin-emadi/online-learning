@@ -118,12 +118,17 @@
     -the test the connection to GitHub with the above command
     - Now you can add your private key and passpharase to the ssh-agent on your machine to avoid entering it every time. for
     this:
-        Run the agent using admin powershell in windows:
+        For Windows Built in openssh:
+        Run the ssh agent using admin powershell in windows:
             $Get-Service ssh-agent |Set-Service -StartupType Automatic -PassThru | Start-Service
         To avoid restart system:
             $start-ssh-agent.cmd 
+        For git-scm git-bash ssh:
+             eval $(ssh-agent -s)
         Then add your key to the agent:
             $ssh-add c:\users\USERNAME/.ssh/id_ed25519...
+        - Test the connection to GitHub without key and passpharase using this command:
+        $ssh -T git@github.com
 ////////////////////////////////////////////////////////////////////////////////////////
 16- Push the projrct to the GitHub:
     $git push -u origin main
