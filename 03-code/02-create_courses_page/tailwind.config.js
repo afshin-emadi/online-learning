@@ -14,9 +14,26 @@ export default {
         "8/10": "80%",
         "9/10": "90%",
       },
+      height: {
+        "1/10": "10%",
+        "2/10": "20%",
+        "3/10": "30%",
+        "4/10": "40%",
+        "5/10": "50%",
+        "6/10": "60%",
+        "7/10": "70%",
+        "8/10": "80%",
+        "9/10": "90%",
+        110: "26rem",
+        115: "28rem",
+        120: "30rem",
+        125: "32rem",
+        130: "34rem",
+      },
       maxWidth: {
         "8xl": "1400px",
         "9xl": "1600px",
+        "10xl": "1800px",
       },
       screens: {
         mobile: "360px",
@@ -27,12 +44,19 @@ export default {
       },
       fontFamily: {
         iranSans: ["IRANSans", "sans-serif"],
+        iranSansFaNum: ["IRANSans_FarsiNumeral", "sans-serif"],
       },
       colors: {
         "my-red-500": "#f51767",
+        "my-red-600": "#d9165c",
+        "my-lightBlue-400": "#9bf9ff",
+        "my-blue-500": "#4c0ffb",
+        "my-blue-600": "#3509b3",
       },
       boxShadow: {
         light: "rgba(19, 15, 235, 0.1) 1px 2px 20px",
+        medium: "rgba(19, 15, 235, 0.2) 1px 2px 30px",
+        heavy: "rgba(19, 15, 235, 0.3) 1px 2px 40px",
       },
       keyframes: {
         slideDown: {

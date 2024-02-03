@@ -26,6 +26,7 @@ import PublicProfile from "./panel/user/PublicProfile";
 import EditProfile from "./panel/user/Profile";
 import Security from "./panel/user/Security";
 import UserDetails from "./panel/user/User";
+import Teacher from "./Teacher";
 
 export {
   Landing,
@@ -33,6 +34,7 @@ export {
   Courses,
   Article,
   Articles,
+  Teacher,
   AboutUs,
   Login,
   Register,
