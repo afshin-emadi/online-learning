@@ -14,6 +14,11 @@ export default {
         "8/10": "80%",
         "9/10": "90%",
       },
+      maxWidth: {
+        "8xl": "1400px",
+        "9xl": "1600px",
+        "10xl": "1800px",
+      },
       height: {
         "1/10": "10%",
         "2/10": "20%",
@@ -30,10 +35,19 @@ export default {
         125: "32rem",
         130: "34rem",
       },
-      maxWidth: {
-        "8xl": "1400px",
-        "9xl": "1600px",
-        "10xl": "1800px",
+      minHeight: {
+        110: "26rem",
+        115: "28rem",
+        120: "30rem",
+        125: "32rem",
+        130: "34rem",
+      },
+      maxHeight: {
+        110: "26rem",
+        115: "28rem",
+        120: "30rem",
+        125: "32rem",
+        130: "34rem",
       },
       screens: {
         mobile: "360px",
@@ -57,11 +71,17 @@ export default {
         light: "rgba(19, 15, 235, 0.1) 1px 2px 20px",
         medium: "rgba(19, 15, 235, 0.2) 1px 2px 30px",
         heavy: "rgba(19, 15, 235, 0.3) 1px 2px 40px",
+        black2: "rgba(0, 0, 0, 0.7) 0px 2px 5px",
       },
       keyframes: {
         slideDown: {
           "0%": { "transform-origin": "0 0", transform: "translateY(-40%)" },
           "100%": { "transform-origin": "0 0", transform: "translateY(0%)" },
+        },
+        slideRight: {
+          
+          "100%": { "transform-origin": "0 0", transform: "translateX(0%)" },
+          
         },
         rgb: {
           "0%": {
@@ -92,6 +112,7 @@ export default {
       },
       animation: {
         slideDown: "slideDown 0.3s linear 1",
+        slideRight: "slideRight 0.3s ease 1 reverse",
         rgb: "rgb 20s linear infinite",
       },
     },

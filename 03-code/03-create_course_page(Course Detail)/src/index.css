@@ -5,7 +5,7 @@
 
 @layer utilities {
   .mainContainer{
-    @apply mx-auto px-8 desktop:max-w-9xl desktop:px-10;
+    @apply mx-auto px-6 laptop:px-8 desktop:max-w-9xl desktop:px-10;
   }
 }
 
