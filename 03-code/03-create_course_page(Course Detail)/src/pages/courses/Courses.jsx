@@ -11,14 +11,6 @@ import {
 
 import { getAllCategories, getAllCourses } from "@config/data";
 
-import testIMG from "@assets/images/courses/test1.webp";
-import testIMG2 from "@assets/images/courses/test2.webp";
-import testIMG3 from "@assets/images/courses/test3.webp";
-import testIMG4 from "@assets/images/courses/test4.webp";
-import testIMG5 from "@assets/images/courses/test5.webp";
-import teacherIMG1 from "@assets/images/teachers/test1.jpg";
-import teacherIMG2 from "@assets/images/teachers/test2.jpg";
-
 function Courses() {
   const data = useLoaderData();
 
@@ -209,12 +201,13 @@ function Courses() {
                   }
                   src={course?.thumb || academyIcon}
                   alt={course?.title || "تصویر دوره"}
+                  loading="lazy"
                 />
                 <figcaption></figcaption>
               </figure>
               <section className="flex h-6/10 w-full select-none flex-col justify-around px-4 py-4">
                 <header>
-                  <Link to={course?._id || ""}>
+                  <Link to={course?._id || ""} state={course}>
                     <h2 className="line-clamp-2 h-14 text-xl font-bold">
                       {course?.title}
                     </h2>
@@ -271,6 +264,7 @@ function Courses() {
                 <footer className="mt-4 flex justify-center gap-x-2 text-center">
                   <Link
                     to={course?._id || ""}
+                    state={course}
                     className="w-full rounded-md border border-my-blue-500 py-1 text-my-blue-500 transition-colors duration-200 hover:bg-my-blue-500 hover:text-white"
                   >
                     {"جزییات‌ دوره"}
